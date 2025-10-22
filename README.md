@@ -15,7 +15,6 @@ IceAlert is a prototype built for the 2025 MiSpace Hackathon that ...
 - [Usage & Examples](USAGE.md)
 - [Architecture](docs/architecture.md)
 - [Roadmap](docs/roadmap.md)
-- [Contributing](CONTRIBUTING.md)
 - [License](LICENSE)
 - [Changelog](CHANGELOG.md)
 

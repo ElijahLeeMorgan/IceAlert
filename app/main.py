@@ -1,7 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import pytorch as torch
 from logging import basicConfig, getLogger, INFO
 
 from UI.home import homePage
@@ -10,11 +7,14 @@ from UI.home import homePage
 basicConfig(level=INFO)
 log = getLogger(__name__)
 
-if __name__ == "__main__":
-    log.info("Initializing IceAlert: Ice Forecasting Application...")
-    # Launch streamlit app
-    if homePage():
-        log.error("Home page failed to load, exiting application...")
-        exit(1)
-    log.info("Closing IceAlert...")
-    exit(0)
+# Streamlit page configuration
+st.set_page_config(
+    page_title="IceAlert - Ice Forecasting",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Main app logic
+log.info("Running IceAlert: Ice Forecasting Application...")
+homePage()
